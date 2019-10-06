@@ -14,7 +14,7 @@ allow_anonymous false
 password_file /etc/mosquitto/pwfile
 listener 1883
 
-sudo mosquitto_passwd -c /etc/mosquitto/pwfile "username" // instead of user name you can use which ever you want.
+sudo mosquitto_passwd -c /etc/mosquitto/pwfile username // instead of user name you can use which ever you want.
 
 sudo reboot                      // This will restart your Computer or Rpi so  u can skip this. 
 
