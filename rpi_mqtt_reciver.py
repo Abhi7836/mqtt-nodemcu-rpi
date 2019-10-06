@@ -1,7 +1,7 @@
 import csv
 import paho.mqtt.client as mqtt
 mqtt_username = "username"
-mqtt_password = "123456"
+mqtt_password = "password"
 mqtt_broker_ip = "192.168.43.20"
 client = mqtt.Client()
 client.username_pw_set(mqtt_username, mqtt_password)
