@@ -28,5 +28,15 @@ mosquitto_pub -d -u username -P password -t test -m "Hello, World!"
  "if you done correctly you will see hello world in first terminal"
  
  Insall Arduino ide in your computer
+ 
+ ESP DEVICESS
+ 
+ File->Preferences in "Additional Boards Manager URLs"  paste below line
+ 
+ http://arduino.esp8266.com/stable/package_esp8266com_index.json
+ 
+ oepn sketch -> include librires -> manage libraries -> tpye Bounce2,PubSubclient,MPU6050 or mpu9050 which you have 
+ and install it.
+ 
 
 
