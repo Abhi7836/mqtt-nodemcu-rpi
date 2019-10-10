@@ -44,6 +44,6 @@ mosquitto_pub -d -u username -P password -t test -m "Hello, World!"
  
  http://arduino.esp8266.com/stable/package_esp8266com_index.json
  
- oepn sketch -> include librires -> manage libraries -> tpye Bounce2,PubSubclient,Bolder Flight System Used which you have 
- and install it.
+ oepn sketch -> include librires -> manage libraries -> tpye Bounce2,PubSubclient,Bolder Flight System which you have 
+ to install.
  
