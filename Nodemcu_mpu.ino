@@ -16,6 +16,7 @@ PubSubClient client(espClient);
 String AX,AY,AZ,GX,GY,GZ,MX,MY,MZ,temp;
 //////////////////////////////////////////////////////////////////////////////////////////////////
 void setup() {
+  pinMode(LED_BUILTIN, OUTPUT);
    Serial.begin(115200);
    while(!Serial) {}
    status = IMU.begin();
@@ -30,14 +31,15 @@ void setup() {
   IMU.setDlpfBandwidth(MPU9250::DLPF_BANDWIDTH_20HZ);//full sacle range 20HZ
   IMU.setSrd(19);
   WiFi.begin(ssid, password);
-  while (WiFi.status() != WL_CONNECTED) { delay(500); Serial.println("Connecting to WiFi.."); }
+  while (WiFi.status() != WL_CONNECTED) { delay(10); Serial.println("Connecting to WiFi..");digitalWrite(LED_BUILTIN, HIGH);delay(500);(LED_BUILTIN, LOW);delay(500);}
   Serial.println("Connected to the WiFi network");
   client.setServer(mqttServer, mqttPort);
   client.setCallback(callback);
   while (!client.connected()) { Serial.println("Connecting to MQTT...");
     if (client.connect("ESP8266Client", mqttUser, mqttPassword )) {
-      Serial.println("connected"); } 
+      Serial.println("connected");} 
     else {Serial.print("failed with state "); Serial.print(client.state());delay(2000);}}
+    digitalWrite(LED_BUILTIN,LOW); 
              }
 ////////////////////////////////////////////////////////////////////////////////////////////////////// 
 void callback(char* topic, byte* payload, unsigned int length) {
