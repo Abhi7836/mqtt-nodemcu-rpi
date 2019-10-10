@@ -27,6 +27,8 @@ mosquitto_sub -d -u username -P password -t test  // change username and passwor
 mosquitto_pub -d -u username -P password -t test -m "Hello, World!" 
  "if you done correctly you will see hello world in first terminal"
  
+ pip install paho-mqtt // for Using mqtt in python ide
+ 
  Insall Arduino ide in your computer
  
  ESP DEVICESS
