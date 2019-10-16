@@ -43,9 +43,12 @@ mosquitto_pub -d -u username -P password -t test -m "Hello, World!"
  
  http://arduino.esp8266.com/stable/package_esp8266com_index.json
  
+  
+ oepn sketch -> include librires -> manage libraries -> tpye Bounce2,PubSubclient,Bolder Flight System which you have 
+ to install.
+ 
   # Hard ware
-   Desiging of circuit
-   i had Designed a circuit which has Esp12e(Nodemcu),Mpu9250,Tp4056 charging Ic.
+   I had Designed a circuit which has Esp12e(Nodemcu),Mpu9250,Tp4056 charging Ic.
    
    
 ![pcb_schematic](https://user-images.githubusercontent.com/39412350/66950459-06a82200-f076-11e9-92c9-c6d478954cb2.png)
@@ -55,7 +58,3 @@ mosquitto_pub -d -u username -P password -t test -m "Hello, World!"
 ![photo_view_front](https://user-images.githubusercontent.com/39412350/66950462-090a7c00-f076-11e9-8b5a-72a9500af13a.png)
 
 ![photo_view_back](https://user-images.githubusercontent.com/39412350/66950461-0871e580-f076-11e9-9d57-8e527aa55aab.png)
- 
- oepn sketch -> include librires -> manage libraries -> tpye Bounce2,PubSubclient,Bolder Flight System which you have 
- to install.
- 
